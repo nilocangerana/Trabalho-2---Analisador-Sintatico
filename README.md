@@ -6,7 +6,7 @@ Nome: Nilo Conrado Messias Alves Cangerana  -  Número USP: 9805362
 [Figma Mockup](https://www.figma.com/file/8nXv0L7PmW7SEVV4ejNahK/Untitled?node-id=0%3A1)
 
 ### 1. Requisitos: 
-Todos os requisitos pedidos no enunciado do milestone 1 foram implementados.  
+Todos os requisitos pedidos no enunciado do milestone 2 foram implementados, incluindo funcionalidades dos botões.  
   
 A loja pode vender produtos por quantidade e serviços por tempo(duração do serviço).  
   
@@ -55,14 +55,18 @@ Para produtos/Serviços: ID do produto/serviço, tipo(produto ou serviço), nome
 Para compras: lista de produtos/serviços vendidos, quantidade, ID da compra, ID e nome do cliente, valor total.
 
 ### 3. Comentários sobre o Código:
-Todos as páginas foram feitas em HTML5 e CSS3. As páginas de administrador estão no formato (...Adm.html), ou seja, essas páginas só serão visíveis para usuários logados do tipo administrador no sistema. As demais páginas podem ser acessadas pelo usuário do tipo cliente.  
+Todos as páginas foram feitas em HTML5, CSS3 e JavaScript . As páginas de administrador estão no formato (...Adm.html), ou seja, essas páginas só serão visíveis para usuários logados do tipo administrador no sistema. As demais páginas podem ser acessadas pelo usuário do tipo cliente.  
   
 Todas as páginas possuem um código inicial igual que gera o topo do site(logo, botões login, logout e background) e um código específico dependendo da funcionalidade daquela página. Existe comentários no código para indicar a parte específica de cada página.  
   
 O código do CSS está no arquivo ../css/style.css  
 Todo o design da página foi feito neste arquivo e ele está organizado com comentários indicando a estilização de cada elemento.  
   
-Imagens utilizadas no site estão na pasta ../img
+Imagens utilizadas no site estão na pasta ../img  
+  
+O código de JavaScript está no arquivo ../js/app.js  
+  
+Foi utilizado o comando de localStorage para armazenar informações que serão armazenadas no banco de dados. No localStorage são armazenados os usuários cadastrados no sistema, os produtos/serviços cadastrados no sistema e as compras já feitas no site.
 
 ### 4. Plano de Testes:
 Não definido ainda.
@@ -71,7 +75,7 @@ Não definido ainda.
 Não definido ainda.
 
 ### 6. Procedimento para Build:
-O projeto foi feito em HTML5 e CSS3 portanto basta um navegador para poder acessá-lo.  
+O projeto foi feito em HTML5, CSS3 e JavaScript portanto basta um navegador para poder acessá-lo.  
   
 Recomenda-se iniciar o projeto pelo arquivo home.html clicando sobre ele e abrindo no navegador.
 
@@ -79,6 +83,10 @@ Recomenda-se iniciar o projeto pelo arquivo home.html clicando sobre ele e abrin
 Na página de carrinho.html e nas páginas paginaProdutos.html/ paginaServicos.html podem ocorrer sobreposição do botão com os textos dispostos na tela caso ocorra uma redução muito grande na tela.
 
 ### 8. Comentários:
-As páginas de administrador não estão conectadas com o resto do site pois não existe um sistema de login ainda, portanto, para acessar elas é necessário abrir o arquivo paginaAdm.html manualmente no navegador para ver o menu de administradores implementado.  
-  
-Alguns botões e informações estão dispostos estaticamente apenas para mostrar a posição e o formato deles na tela e não estão executando sua devida função. Essas funções serão implementadas em etapas posteriores. 
+O sistema já está com dois usuários cadastrados:  
+-Um administrador:  
+usuário: admin  
+senha: admin  
+-Um cliente:  
+usuário: cliente1  
+senha: cliente1  
