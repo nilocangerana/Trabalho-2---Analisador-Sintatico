@@ -69,10 +69,19 @@ O código de JavaScript está no arquivo ../js/app.js
 Foi utilizado o comando de localStorage para armazenar informações que serão armazenadas no banco de dados. No localStorage são armazenados os usuários cadastrados no sistema, os produtos/serviços cadastrados no sistema e as compras já feitas no site.
 
 ### 4. Plano de Testes:
-Não definido ainda.
+Não foi utilizado um framework para testes, logo os testes foram feitos manualmente.  
+T1)Teste para cadastrar usuário, com ID único e nome de usuário único.  
+T2)Teste para Editar e Excluir usuários do sistema como administrador.  
+T3)Teste para cadastrar produtos/serviços, com ID único.  
+T4)Teste para Editar e Excluir produtos/serviços do sistema como administrador.  
+T5)Teste para editar informações de cliente usando o sistema.
 
 ### 5. Resultados dos Testes:
-Não definido ainda.
+T1)O sistema impediu o cadastro de usuários com ID e nome de usuário iguais e permitiu cadastrar usuário com ID e nome de usuário diferente, garantindo consistência na base de dados de usuários.  
+T2)Foi possível editar informações de usuários e excluir usuários do sistema. Só não é possível excluir o administrador logado no momento, impedindo que o sistema fique sem usuários.  
+T3)O sistema impediu o cadastro de produtos/serviços com ID igual e permitiu cadastrar produtos/serviços com ID diferente.  
+T4)Foi possível editar informações de produtos/serviços e exclui-los do sistema.  
+T5)O cliente é capaz de editar suas informações e elas são atualizadas no sistema.
 
 ### 6. Procedimento para Build:
 O projeto foi feito em HTML5, CSS3 e JavaScript portanto basta um navegador para poder acessá-lo.  
@@ -87,6 +96,9 @@ O sistema já está com dois usuários cadastrados:
 -Um administrador:  
 usuário: admin  
 senha: admin  
+  
 -Um cliente:  
 usuário: cliente1  
 senha: cliente1  
+  
+
